@@ -4,7 +4,7 @@ import { Copy, AlertCircle, Calendar, TrendingUp } from 'lucide-react'
 export default function Affiliate() {
   const [activeTab, setActiveTab] = useState('Overview')
   const [activeView, setActiveView] = useState('Cumulative')
-  const referralLink = 'https://app.OxoFunded.com/register?ref=8CC65116'
+  const referralLink = 'https://app.Solitaire Markets.com/register?ref=8CC65116'
   const referralCode = '8CC65116'
 
   const handleCopy = (text) => {
@@ -63,7 +63,7 @@ export default function Affiliate() {
                 </p>
               </div>
               <button 
-                onClick={() => window.open('https://OxoFunded.com/affiliate', '_blank')}
+                onClick={() => window.open('https://Solitaire Markets.com/affiliate', '_blank')}
                 className="whitespace-nowrap rounded-lg bg-blue-600 px-4 py-1.5 text-xs font-semibold text-white hover:bg-blue-700"
               >
                 Visit Affiliate Page

@@ -115,7 +115,7 @@ export default function Competition() {
     return () => clearInterval(interval)
   }, [])
 
-  const [activeTab, setActiveTab] = useState('OxoFunded')
+  const [activeTab, setActiveTab] = useState('Solitaire Markets')
 
   // Competition data
   const competitions = [
@@ -123,55 +123,55 @@ export default function Competition() {
       title: 'November 2025 Monthly Competition',
       status: 'Ongoing',
       participants: 50000,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'October 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'September 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'August 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'July 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'June 2025 Monthly Competition',
       status: 'Ended',
       participants: 46073,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'May 2025 Monthly Competition',
       status: 'Ended',
       participants: 48520,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'April 2025 Monthly Competition',
       status: 'Ended',
       participants: 49674,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
     {
       title: 'March 2025 Monthly Competition',
       status: 'Ended',
       participants: 43772,
-      platforms: ['OxoFunded', 'matchtrader'],
+      platforms: ['Solitaire Markets', 'matchtrader'],
     },
   ]
 
@@ -284,7 +284,7 @@ export default function Competition() {
 
       {/* ================= BOTTOM NAVIGATION TABS ================= */}
       <nav className="flex items-center justify-center gap-8 border-t border-slate-200 pt-6 dark:border-white/10">
-        {['Joined', 'OxoFunded', 'Championships', 'Hosted'].map((tab) => (
+        {['Joined', 'Solitaire Markets', 'Championships', 'Hosted'].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}

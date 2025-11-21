@@ -14,8 +14,8 @@ export default function CMS() {
   ]
 
   const sampleContent = {
-    Homepage: 'Welcome to OxoFunded - Your gateway to funded trading accounts...',
-    About: 'OxoFunded is a leading prop trading firm...',
+    Homepage: 'Welcome to Solitaire Markets - Your gateway to funded trading accounts...',
+    About: 'Solitaire Markets is a leading prop trading firm...',
     Rules: 'Trading Rules and Guidelines...',
     FAQs: 'Frequently Asked Questions...',
     Terms: 'Terms and Conditions of Service...',

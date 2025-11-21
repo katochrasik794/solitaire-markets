@@ -301,7 +301,7 @@ export default function CompetitionDetails() {
                 <Trophy className="h-4 w-4 text-slate-400" />
                 <div>
                   <span className="text-slate-600 dark:text-slate-400">Organizer: </span>
-                  <span className="font-medium text-slate-900 dark:text-white">OxoFunded</span>
+                  <span className="font-medium text-slate-900 dark:text-white">Solitaire Markets</span>
                 </div>
               </div>
             </div>

@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import { userNavItems } from '../navItems'
-import SidebarThemeButton from './SidebarThemeButton';
 
 export default function Sidebar({ isExpanded, onItemClick }) {
 
@@ -61,11 +60,6 @@ const iconWrap =
             )
           })}
       </nav>
-      
-      {/* Theme Button at Bottom */}
-      <div className="mt-auto pt-4">
-        <SidebarThemeButton isExpanded={isExpanded} />
-      </div>
     </aside>
   )
 }

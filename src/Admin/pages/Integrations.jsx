@@ -3,11 +3,11 @@ import { Settings, Save, Key, Mail, BarChart, Facebook, Webhook, Send } from 'lu
 
 export default function Integrations() {
   const [integrations, setIntegrations] = useState({
-    mt5: { enabled: true, apiKey: 'MT5-API-KEY-12345', server: 'OxoFunded-Demo' },
-    email: { enabled: true, smtpHost: 'smtp.gmail.com', smtpPort: '587', smtpUser: 'noreply@OxoFunded.com' },
+    mt5: { enabled: true, apiKey: 'MT5-API-KEY-12345', server: 'Solitaire Markets-Demo' },
+    email: { enabled: true, smtpHost: 'smtp.gmail.com', smtpPort: '587', smtpUser: 'noreply@Solitaire Markets.com' },
     analytics: { enabled: true, trackingId: 'GA-123456789' },
     pixel: { enabled: false, pixelId: 'FB-123456789' },
-    webhooks: { enabled: true, url: 'https://api.OxoFunded.com/webhook' },
+    webhooks: { enabled: true, url: 'https://api.Solitaire Markets.com/webhook' },
     telegram: { enabled: false, botToken: 'TELEGRAM-BOT-TOKEN', chatId: 'CHAT-ID' },
   })
 

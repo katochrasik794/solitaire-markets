@@ -1,31 +1,25 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 
 const ThemeContext = createContext({
-  theme: 'dark',
+  theme: 'light',
   toggleTheme: () => {},
 })
 
-const THEME_KEY = 'OxoFunded:theme'
+const THEME_KEY = 'Solitaire Markets:theme'
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window === 'undefined') return 'dark'
-    return localStorage.getItem(THEME_KEY) || 'dark'
-  })
+  const [theme] = useState('light')
 
   useEffect(() => {
     if (typeof document === 'undefined') return
     const root = document.documentElement
-    if (theme === 'dark') {
-      root.classList.add('dark')
-    } else {
-      root.classList.remove('dark')
-    }
-    localStorage.setItem(THEME_KEY, theme)
-  }, [theme])
+    // Always remove dark class to ensure light mode
+    root.classList.remove('dark')
+    localStorage.setItem(THEME_KEY, 'light')
+  }, [])
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+    // Disabled - theme is always light
   }
 
   const value = useMemo(() => ({ theme, toggleTheme }), [theme])

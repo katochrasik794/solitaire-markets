@@ -69,7 +69,7 @@ export default function AdminLayout() {
           <div className="flex items-center gap-4">
             <img
               src={theme === 'dark' ? '/logo.svg' : '/logo.svg'}
-              alt="OxoFunded"
+              alt="Solitaire Markets"
               className="h-8 w-auto object-contain"
               draggable="false"
             />

@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react'
 
 export default function NewChallenge() {
   const [challengeType, setChallengeType] = useState('Two Step')
-  const [model, setModel] = useState('OxoFunded')
+  const [model, setModel] = useState('Solitaire Markets')
   const [profitTarget, setProfitTarget] = useState('8%')
   const [accountSize, setAccountSize] = useState('$100,000.00')
   const [tradingPlatform, setTradingPlatform] = useState('MetaTrader 5')
@@ -60,7 +60,7 @@ export default function NewChallenge() {
           <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900">
             <h3 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Model</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {['OxoFunded', 'OxoFunded Pro'].map((modelOption) => (
+              {['Solitaire Markets', 'Solitaire Markets Pro'].map((modelOption) => (
                 <label
                   key={modelOption}
                   className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-slate-200 p-3 hover:border-blue-500 dark:border-slate-600 dark:hover:border-blue-500"

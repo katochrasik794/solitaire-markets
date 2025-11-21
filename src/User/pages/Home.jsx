@@ -20,7 +20,7 @@ export default function Home() {
       <section className="flex flex-wrap items-center gap-3 md:gap-4 rounded-xl border border-slate-200 bg-white px-4 md:px-6 py-3 md:py-4 shadow-sm dark:border-slate-700 dark:bg-slate-900">
         <img
           src={theme === 'dark' ? '/logo.svg' : '/logo.svg'}
-          alt="OxoFunded"
+          alt="Solitaire Markets"
           className="h-6 md:h-8 w-auto object-contain"
           draggable="false"
         />
@@ -41,8 +41,8 @@ export default function Home() {
             onClick={() => {
               if (navigator.share) {
                 navigator.share({
-                  title: 'OxoFunded',
-                  text: 'Check out OxoFunded trading platform!',
+                  title: 'Solitaire Markets',
+                  text: 'Check out Solitaire Markets trading platform!',
                   url: window.location.href,
                 }).catch(() => {})
               } else {
